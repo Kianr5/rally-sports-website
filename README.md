@@ -1,41 +1,95 @@
 # Rally Sports Website
 
-Official website for Rally Sports and the RallyFest pilot event.
+Official website for **Rally Sports** and the **RallyFest** pilot event.
+
+------------------------------------------------------------------------
+
+## Project Overview
+
+This repository contains the source code and assets for the Rally Sports
+website.
+
+The website will:
+
+-   Introduce Rally Sports
+-   Showcase RallyFest
+-   Collect pilot registrations
+-   Provide sponsor information
+-   Serve as the official online presence for Rally Sports
+
+------------------------------------------------------------------------
+
+## Technology Stack
+
+-   HTML
+-   CSS
+-   Vanilla JavaScript
+-   GitHub Pages (hosting)
+-   Tally (embedded registration form)
+
+No backend or database is used for the initial MVP.
+
+------------------------------------------------------------------------
 
 ## Project Structure
 
-```
+``` text
 rally-sports-website/
-├── website-content.md
 ├── README.md
+├── website-content.md
+├── index.html
+├── styles.css
+├── script.js
 ├── assets/
 │   ├── logos/
+│   │   └── rally-sports-logo.png
 │   ├── images/
 │   └── icons/
 ```
 
-## Purpose
-
-This repository contains the source code and assets for the official Rally Sports website.
-
-The website will be built using:
-
-- HTML
-- CSS
-- Vanilla JavaScript
-
-The website will be hosted using GitHub Pages.
+------------------------------------------------------------------------
 
 ## Source of Truth
 
-All website copy, branding, and business information is maintained in:
+All business information, branding, website copy, and design decisions
+are maintained in:
 
-```
+``` text
 website-content.md
 ```
 
-Codex should use that file as the primary source of truth when generating or updating the website.
+When building or updating the website, use this file as the primary
+reference.
+
+------------------------------------------------------------------------
+
+## Design Goals
+
+The website should be:
+
+-   Modern
+-   Premium
+-   Athletic
+-   Community-focused
+-   Mobile responsive
+-   Fast-loading
+-   Easy to maintain
+
+------------------------------------------------------------------------
+
+## Development Workflow
+
+1.  Update `website-content.md` when business information changes.
+2.  Use Codex to generate or modify website code.
+3.  Review changes.
+4.  Commit changes to GitHub.
+5.  GitHub Pages publishes the latest version.
+
+------------------------------------------------------------------------
 
 ## Status
 
-Current Phase: Planning
+**Current Phase:** Planning & Initial Website Development
+
+The website has not yet been generated. This repository currently
+contains planning documents, branding assets, and project structure.
