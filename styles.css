@@ -683,60 +683,19 @@ blockquote {
 .tally-embed-wrapper {
   width: 100%;
   min-width: 0;
-}
-
-.tally-embed-wrapper iframe {
-  width: 100%;
-  min-height: 620px;
-  display: block;
-  border: 0;
-}
-
-.form-placeholder {
-  position: relative;
-  width: 100%;
-  padding: 2rem;
+  overflow: hidden;
   background: var(--gray);
   border: 1px solid var(--border);
   border-radius: 0.65rem;
 }
 
-.form-placeholder h3 {
-  margin-bottom: 0.8rem;
-}
-
-.form-placeholder > p:not(.card-label) {
-  color: var(--muted);
-}
-
-.form-placeholder .button {
+.tally-embed-wrapper iframe {
   width: 100%;
-  margin-top: 1.25rem;
-}
-
-.status-dot {
-  position: absolute;
-  top: 1.75rem;
-  right: 1.75rem;
-  width: 9px;
-  height: 9px;
-  background: var(--blue);
-  border-radius: 50%;
-  box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.1);
-}
-
-.placeholder-line {
-  width: 100%;
-  height: 3rem;
+  max-width: 100%;
+  min-height: 900px;
   display: block;
-  margin-top: 1rem;
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: 0.3rem;
-}
-
-.placeholder-line.short {
-  width: 72%;
+  border: 0;
+  overflow: hidden;
 }
 
 .sponsor-section {
@@ -1034,10 +993,6 @@ blockquote {
   }
 
   .event-card {
-    padding: 2.5rem;
-  }
-
-  .form-placeholder {
     padding: 2.5rem;
   }
 
