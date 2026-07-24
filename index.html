@@ -18,6 +18,34 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <defs>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="icon-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3L15 9"/><path d="m18 12 1.5 1.5a1 1 0 1 0 3-3L18 6a4 4 0 0 0-5.5 0L11 7.5"/><path d="m3 8 5-5 4 4-5 5M3 16l4 4 3-3"/></symbol>
+      <symbol id="icon-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.47.98-1 1-2 .08-3 1-3 4M14 14.66V17c0 .55.47.98 1 1 2 .08 3 1 3 4"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="icon-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13M9 9l12-2"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+      <symbol id="icon-calendar-days" viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="icon-circle-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="1"/></symbol>
+      <symbol id="icon-ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 0 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 0 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v2ZM13 5v2M13 17v2M13 11v2"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3-1.9 5.1L5 10l5.1 1.9L12 17l1.9-5.1L19 10l-5.1-1.9L12 3ZM5 3v4M3 5h4M19 17v4M17 19h4"/></symbol>
+      <symbol id="icon-utensils" viewBox="0 0 24 24"><path d="M3 2v7a2 2 0 0 0 4 0V2M5 2v20M21 15V2c-3 0-5 2.5-5 6v4c0 1.7 1.3 3 3 3h2Zm0 0v7"/></symbol>
+      <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="icon-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+      <symbol id="icon-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+      <symbol id="icon-arrow-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol>
+      <symbol id="icon-clipboard-check" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2M9 14l2 2 4-4"/></symbol>
+      <symbol id="icon-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    </defs>
+  </svg>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header" data-header>
@@ -26,7 +54,8 @@
         <img src="assets/logos/rally-sports-logo.png" alt="Rally Sports">
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
-        <span></span><span></span><span></span>
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#icon-menu"></use></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#icon-x"></use></svg>
       </button>
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
@@ -35,7 +64,7 @@
         <a href="#sponsors">Sponsors</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a class="button button-small" href="#registration">Register</a>
+        <a class="button button-small" href="#registration">Register <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
       </div>
     </nav>
   </header>
@@ -44,39 +73,38 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-grid container">
         <div class="hero-copy reveal">
+          <p class="hero-event-label">RallyFest Pilot</p>
           <p class="eyebrow">Competition · Community · Culture</p>
           <h1 id="hero-title">The next great tradition starts here.</h1>
           <p class="hero-lede">Rally Sports creates world-class competitions and festival-style experiences that bring communities together.</p>
           <div class="button-row">
-            <a class="button" href="#registration">Register for the Pilot</a>
-            <a class="button button-secondary" href="#rallyfest">Learn More</a>
+            <a class="button hero-primary" href="#registration">Register for the Pilot <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+            <a class="button button-secondary hero-secondary" href="#rallyfest">Learn More</a>
           </div>
-          <p class="hero-note">RallyFest Pilot · Seattle Area · September 19–20, 2026 <span>(Tentative)</span></p>
+          <div class="hero-badges" aria-label="RallyFest Pilot details">
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>Seattle Area</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-circle-dot"></use></svg>3v3 Soccer</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-calendar-days"></use></svg>September 19–20, 2026 <strong>(Tentative)</strong></span>
+            <span><svg class="icon" aria-hidden="true"><use href="#icon-sparkles"></use></svg>Festival Experience</span>
+          </div>
         </div>
-        <div class="visual visual-hero reveal" role="img" aria-label="Photography placeholder for a panoramic soccer action image">
-          <div class="field-lines" aria-hidden="true"></div>
-          <span class="visual-index">01</span>
-          <div class="visual-caption">
-            <span>RallyFest</span>
-            <strong>Soccer in motion</strong>
-          </div>
+        <div class="hero-media reveal">
+          <img src="assets/images/Hero Image.png" width="2098" height="749" alt="Rally Sports players competing on a soccer field at sunset beneath the message Play Together. Build Traditions." decoding="async">
         </div>
       </div>
+      <a class="hero-scroll" href="#about" aria-label="Scroll to About Rally Sports">
+        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-down"></use></svg>
+      </a>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container split">
+      <div class="container about-text-only">
         <div class="section-copy reveal">
           <p class="eyebrow">About Rally Sports</p>
           <h2 id="about-title">We build sporting experiences that endure.</h2>
           <p class="lead">Rally Sports is a sports entertainment company that develops, owns, operates, and scales sports properties.</p>
           <p>Through world-class competitions and festival-style experiences, Rally Sports creates annual traditions that bring communities together while building enduring consumer brands.</p>
           <blockquote>“Competition brings us together. Community brings us back.”</blockquote>
-        </div>
-        <div class="visual visual-team reveal" role="img" aria-label="Photography placeholder for players celebrating together">
-          <span class="visual-index">02</span>
-          <div class="team-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="visual-caption"><span>Community</span><strong>Built together</strong></div>
         </div>
       </div>
     </section>
@@ -89,16 +117,28 @@
         </div>
         <div class="pillars">
           <article class="pillar reveal">
+            <div class="pillar-image-crop pillar-image-competition">
+              <img src="assets/images/Competition-Community-Culture Cards.png" width="1536" height="1024" alt="Soccer field and ball at sunset representing competition" loading="lazy" decoding="async">
+            </div>
+            <span class="pillar-icon" aria-hidden="true"><svg class="icon"><use href="#icon-trophy"></use></svg></span>
             <span>01</span>
             <h3>Competition</h3>
             <p>World-class sporting experiences built around the thrill of play.</p>
           </article>
           <article class="pillar reveal">
+            <div class="pillar-image-crop pillar-image-community">
+              <img src="assets/images/Competition-Community-Culture Cards.png" width="1536" height="1024" alt="People gathering under festival lights representing community" loading="lazy" decoding="async">
+            </div>
+            <span class="pillar-icon" aria-hidden="true"><svg class="icon"><use href="#icon-users"></use></svg></span>
             <span>02</span>
             <h3>Community</h3>
             <p>Annual traditions that bring people together and keep them coming back.</p>
           </article>
           <article class="pillar reveal">
+            <div class="pillar-image-crop pillar-image-culture">
+              <img src="assets/images/Competition-Community-Culture Cards.png" width="1536" height="1024" alt="Crowds enjoying an evening sports festival representing culture" loading="lazy" decoding="async">
+            </div>
+            <span class="pillar-icon" aria-hidden="true"><svg class="icon"><use href="#icon-music"></use></svg></span>
             <span>03</span>
             <h3>Culture</h3>
             <p>Festival-style moments where sport, music, food, and connection meet.</p>
@@ -108,24 +148,32 @@
     </section>
 
     <section class="section rallyfest-section" id="rallyfest" aria-labelledby="rallyfest-title">
-      <div class="container split split-reverse">
-        <div class="visual visual-action reveal" role="img" aria-label="Photography placeholder for high-intensity 3v3 soccer gameplay">
-          <span class="visual-index">03</span>
-          <div class="motion-lines" aria-hidden="true"></div>
-          <div class="visual-caption"><span>3v3 soccer</span><strong>Fast. Competitive. Electric.</strong></div>
+      <div class="container">
+        <div class="split split-reverse">
+          <figure class="section-image reveal">
+            <img src="assets/images/Competition Image.png" width="1448" height="1086" alt="Soccer ball positioned at midfield with a goal beyond" loading="lazy" decoding="async">
+          </figure>
+          <div class="section-copy reveal">
+            <p class="eyebrow">Introducing RallyFest</p>
+            <h2 id="rallyfest-title">More than a tournament.</h2>
+            <p class="lead">RallyFest is a festival-style 3v3 soccer tournament that combines competitive play with music, food, entertainment, and community.</p>
+            <p>The goal is to create an annual tradition that players look forward to every year.</p>
+            <ul class="feature-list" aria-label="RallyFest features">
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-calendar-days"></use></svg><span>Two-day tournament</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-sparkles"></use></svg><span>Festival atmosphere</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-utensils"></use></svg><span>Music and food vendors</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-handshake"></use></svg><span>Sponsor activations</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#icon-award"></use></svg><span>Championship matches</span></li>
+            </ul>
+          </div>
         </div>
-        <div class="section-copy reveal">
-          <p class="eyebrow">Introducing RallyFest</p>
-          <h2 id="rallyfest-title">More than a tournament.</h2>
-          <p class="lead">RallyFest is a festival-style 3v3 soccer tournament that combines competitive play with music, food, entertainment, and community.</p>
-          <p>The goal is to create an annual tradition that players look forward to every year.</p>
-          <ul class="feature-list" aria-label="RallyFest features">
-            <li>Two-day tournament</li>
-            <li>Festival atmosphere</li>
-            <li>Music and food vendors</li>
-            <li>Sponsor activations</li>
-            <li>Championship matches</li>
-          </ul>
+        <div class="experience-gallery">
+          <figure class="experience-image reveal">
+            <img src="assets/images/Community Image.png" width="1536" height="1024" alt="Food trucks and gathering tables beside soccer fields under evening string lights" loading="lazy" decoding="async">
+          </figure>
+          <figure class="experience-image reveal">
+            <img src="assets/images/Festival Image.png" width="1536" height="1024" alt="RallyFest grounds with food vendors, branded tents, flags, and a festival walkway" loading="lazy" decoding="async">
+          </figure>
         </div>
       </div>
     </section>
@@ -135,14 +183,14 @@
         <div class="event-intro reveal">
           <p class="eyebrow eyebrow-light">The pilot event</p>
           <h2 id="event-title">RallyFest Pilot</h2>
-          <p>Seattle Area · September 19–20, 2026 <strong>(Tentative)</strong></p>
+          <p class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>Seattle Area</span><span><svg class="icon" aria-hidden="true"><use href="#icon-calendar-days"></use></svg>September 19–20, 2026 <strong>(Tentative)</strong></span></p>
         </div>
         <dl class="event-facts reveal">
-          <div><dt>Format</dt><dd>3v3 Soccer</dd></div>
-          <div><dt>Roster</dt><dd>3–5 Players</dd></div>
-          <div><dt>Venue</dt><dd>Coming Soon</dd></div>
-          <div><dt>Entry Fee</dt><dd>Coming Soon</dd></div>
-          <div><dt>Deadline</dt><dd>Coming Soon</dd></div>
+          <div><dt><svg class="icon" aria-hidden="true"><use href="#icon-circle-dot"></use></svg>Format</dt><dd>3v3 Soccer</dd></div>
+          <div><dt><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg>Roster</dt><dd>3–5 Players</dd></div>
+          <div><dt><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>Venue</dt><dd>Coming Soon</dd></div>
+          <div><dt><svg class="icon" aria-hidden="true"><use href="#icon-ticket"></use></svg>Entry Fee</dt><dd>Coming Soon</dd></div>
+          <div><dt><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>Deadline</dt><dd>Coming Soon</dd></div>
         </dl>
         <div class="event-grid">
           <article class="event-card reveal">
@@ -156,7 +204,8 @@
             <p class="fine-print">Final divisions subject to registration numbers.</p>
           </article>
           <article class="event-card reveal">
-            <p class="card-label">Planned prizes</p>
+            <img class="event-card-image" src="assets/images/Champions Image.png" width="1448" height="1086" alt="Gold championship trophy displayed on a Rally Sports podium at sunset" loading="lazy" decoding="async">
+            <p class="card-label card-label-icon"><svg class="icon" aria-hidden="true"><use href="#icon-award"></use></svg>Planned prizes</p>
             <h3>Play for the podium</h3>
             <ul>
               <li>Cash prizes and trophies</li>
@@ -170,20 +219,42 @@
       </div>
     </section>
 
-    <section class="section" id="registration" aria-labelledby="registration-title">
-      <div class="container registration-grid">
-        <div class="section-copy reveal">
-          <p class="eyebrow">Get on the list</p>
-          <h2 id="registration-title">Register for the RallyFest Pilot.</h2>
-          <p class="lead">Pre-register your team and be among the first to hear when final event details are announced.</p>
-          <ul class="check-list">
-            <li>Team and captain information</li>
-            <li>Preferred division and skill level</li>
-            <li>Roster of three to five players</li>
-            <li>Marketing email opt-in</li>
-            <li>Pre-registration acknowledgement</li>
-          </ul>
+    <section class="section registration-section" id="registration" aria-labelledby="registration-title">
+      <div class="container">
+        <div class="registration-intro reveal">
+          <div>
+            <p class="eyebrow">Pre-register</p>
+            <h2 id="registration-title">Be Part of the Founding RallyFest Pilot</h2>
+            <p class="lead">RallyFest is preparing for its inaugural event in the Seattle area. Pre-register to receive updates about registration, venue announcements, pricing, and event details.</p>
+          </div>
+          <figure class="registration-image">
+            <img src="assets/images/Registration Image.png" width="1536" height="1024" alt="RallyFest team check-in tents and welcome entrance" loading="lazy" decoding="async">
+          </figure>
         </div>
+
+        <div class="registration-benefits" aria-label="Pre-registration benefits">
+          <article class="registration-benefit reveal">
+            <span class="registration-benefit-icon" aria-hidden="true"><svg class="icon"><use href="#icon-bell"></use></svg></span>
+            <h3>Early Event Updates</h3>
+            <p>Receive official announcements before public release.</p>
+          </article>
+          <article class="registration-benefit reveal">
+            <span class="registration-benefit-icon" aria-hidden="true"><svg class="icon"><use href="#icon-clipboard-check"></use></svg></span>
+            <h3>Priority Registration</h3>
+            <p>Be among the first invited when registration officially opens.</p>
+          </article>
+          <article class="registration-benefit reveal">
+            <span class="registration-benefit-icon" aria-hidden="true"><svg class="icon"><use href="#icon-calendar-days"></use></svg></span>
+            <h3>Event Information</h3>
+            <p>Receive venue, schedule, and tournament updates.</p>
+          </article>
+          <article class="registration-benefit reveal">
+            <span class="registration-benefit-icon" aria-hidden="true"><svg class="icon"><use href="#icon-users"></use></svg></span>
+            <h3>Founding Community</h3>
+            <p>Help shape the first RallyFest and become part of its history.</p>
+          </article>
+        </div>
+
         <div class="tally-embed-wrapper reveal" id="tally-registration">
           <iframe
             data-tally-src="https://tally.so/embed/BzVgy7?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
@@ -221,6 +292,16 @@
             })();
           </script>
         </div>
+
+        <p class="registration-privacy reveal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg>
+          <span>Your information will only be used for RallyFest event updates and registration communications.</span>
+        </p>
+
+        <div class="registration-contact reveal">
+          <p>Questions before registering?</p>
+          <a class="button button-secondary" href="#contact">Contact Rally Sports</a>
+        </div>
       </div>
     </section>
 
@@ -231,13 +312,11 @@
           <h2 id="sponsor-title">Become a Founding RallyFest Partner</h2>
           <p class="lead">Partner with Rally Sports to help launch Seattle’s next great sports festival.</p>
           <p>RallyFest connects competition, community, and culture while providing meaningful exposure for founding partners.</p>
-          <a class="button" href="#contact">Become a Sponsor</a>
+          <a class="button" href="#contact"><svg class="icon" aria-hidden="true"><use href="#icon-handshake"></use></svg>Become a Sponsor</a>
         </div>
-        <div class="visual visual-sponsor reveal" role="img" aria-label="Photography placeholder for sponsor activations and branded tents">
-          <span class="visual-index">04</span>
-          <div class="tent-shapes" aria-hidden="true"><i></i><i></i><i></i></div>
-          <div class="visual-caption"><span>Partnership</span><strong>Build the tradition</strong></div>
-        </div>
+        <figure class="section-image reveal">
+          <img src="assets/images/Sponsor Image.png" width="1448" height="1086" alt="A row of event partner tents and activation spaces beside the soccer fields" loading="lazy" decoding="async">
+        </figure>
       </div>
     </section>
 
@@ -250,19 +329,19 @@
         </div>
         <div class="faq-list reveal">
           <details>
-            <summary>When and where is the RallyFest Pilot?</summary>
+            <summary><span>When and where is the RallyFest Pilot?</span><span class="faq-icons" aria-hidden="true"><svg class="icon icon-plus"><use href="#icon-plus"></use></svg><svg class="icon icon-minus"><use href="#icon-minus"></use></svg></span></summary>
             <p>September 19–20, 2026 (Tentative), in the Seattle Area. Venue: Coming Soon.</p>
           </details>
           <details>
-            <summary>What is the tournament format?</summary>
+            <summary><span>What is the tournament format?</span><span class="faq-icons" aria-hidden="true"><svg class="icon icon-plus"><use href="#icon-plus"></use></svg><svg class="icon icon-minus"><use href="#icon-minus"></use></svg></span></summary>
             <p>RallyFest is a two-day 3v3 soccer tournament. Teams may have a minimum of three and a maximum of five players.</p>
           </details>
           <details>
-            <summary>Which divisions are planned?</summary>
+            <summary><span>Which divisions are planned?</span><span class="faq-icons" aria-hidden="true"><svg class="icon icon-plus"><use href="#icon-plus"></use></svg><svg class="icon icon-minus"><use href="#icon-minus"></use></svg></span></summary>
             <p>Men’s Open, Women’s Open, and Co-Ed Open. Final divisions are subject to registration numbers.</p>
           </details>
           <details>
-            <summary>How much does it cost to enter?</summary>
+            <summary><span>How much does it cost to enter?</span><span class="faq-icons" aria-hidden="true"><svg class="icon icon-plus"><use href="#icon-plus"></use></svg><svg class="icon icon-minus"><use href="#icon-minus"></use></svg></span></summary>
             <p>Entry fee: Coming Soon. Registration deadline: Coming Soon.</p>
           </details>
         </div>
@@ -277,8 +356,8 @@
           <p>Questions about Rally Sports, RallyFest, or a founding partnership? Get in touch.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:hello@rallysports.com">hello@rallysports.com</a>
-          <a href="https://www.instagram.com/playrally/" target="_blank" rel="noopener noreferrer" aria-label="Rally Sports on Instagram, opens in a new tab">Instagram · playrally</a>
+          <a href="mailto:hello@rallysports.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg>hello@rallysports.com</a>
+          <a href="https://www.instagram.com/playrally/" target="_blank" rel="noopener noreferrer" aria-label="Rally Sports on Instagram, opens in a new tab">Instagram · playrally <svg class="icon" aria-hidden="true"><use href="#icon-external-link"></use></svg></a>
           <span>TikTok · Coming Soon</span>
           <span>YouTube · Coming Soon</span>
           <span>LinkedIn · Coming Soon</span>
@@ -291,6 +370,7 @@
     <div class="container footer-inner">
       <a class="footer-brand" href="#top" aria-label="Back to top">
         <img src="assets/logos/rally-sports-logo.png" alt="">
+        <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
       </a>
       <p>Competition brings us together. Community brings us back.</p>
       <p class="copyright">© <span data-year>2026</span> Rally Sports</p>
